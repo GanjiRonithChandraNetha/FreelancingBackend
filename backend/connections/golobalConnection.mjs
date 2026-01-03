@@ -3,6 +3,7 @@ import {connect} from 'mongoose';
 
 const publicConnectDB = async () => {
   try {
+    console.log(process.env.MONGODB_URL);
     await connect(process.env.MONGODB_URL);
     console.log("MongoDB Connected Successfully");
   } catch (error) {
