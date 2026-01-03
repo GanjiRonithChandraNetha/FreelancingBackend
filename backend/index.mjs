@@ -17,7 +17,7 @@ publicConnectDB();
 const app = express();
 
 app.use(express.json())
-app.use(cors({origin:"http://localhost:5173"}))
+app.use(cors({origin:"http://fontend-bucket-freelancing.s3-website-ap-southeast-2.amazonaws.com"}))
 
 app.use('/v1/application/',accessRoutes);
 
